@@ -73,3 +73,11 @@ ioet_automations/
 └── test.cy.js
 
 ```
+
+## Contributing
+
+Contributions are welcome. Please submit a pull request explaining the changes you've made.
+
+## License
+
+This project is licensed under the ISC License.
