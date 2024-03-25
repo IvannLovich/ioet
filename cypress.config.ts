@@ -5,6 +5,7 @@ import createEsbuildPlugin from "@badeball/cypress-cucumber-preprocessor/esbuild
 
 export default defineConfig({
   e2e: {
+    experimentalRunAllSpecs: true,
     videoCompression: false,
     specPattern: "**/*.feature",
     async setupNodeEvents(
