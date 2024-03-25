@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 22000000
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1430000000
+              "duration": 1476000000
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 204000000
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 262000000
+              "duration": 140000000
             }
           }
         ],
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 24000000
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 762000000
+              "duration": 1250000000
             }
           },
           {
@@ -119,7 +119,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 409000000
+              "duration": 354000000
             }
           },
           {
@@ -132,7 +132,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 129000000
             }
           }
         ],
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 21000000
             }
           },
           {
@@ -180,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 704000000
+              "duration": 1559000000
             }
           },
           {
@@ -193,7 +193,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 300000000
             }
           },
           {
@@ -206,7 +206,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153000000
+              "duration": 159000000
             }
           }
         ],
@@ -241,7 +241,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 27000000
             }
           },
           {
@@ -254,7 +254,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 1327000000
             }
           },
           {
@@ -267,7 +267,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 374000000
+              "duration": 359000000
             }
           },
           {
@@ -280,7 +280,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 131000000
             }
           }
         ],
@@ -294,6 +294,67 @@
     "name": "Invalid Username and Password Login",
     "tags": [],
     "uri": "cypress/e2e/invalidUsernamePasswordLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-page;correct-items-layout",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Correct items layout",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is in Login Page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 808000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user is on logged correctly",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The user enters to inventory items page and can see them with their respective info",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inventory Page",
+    "tags": [],
+    "uri": "cypress/e2e/inventoryItems.feature"
   },
   {
     "description": "",
@@ -315,7 +376,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 21000000
             }
           },
           {
@@ -328,7 +389,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 1031000000
             }
           },
           {
@@ -341,7 +402,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 140000000
             }
           }
         ],
@@ -376,7 +437,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 19000000
             }
           },
           {
@@ -389,7 +450,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 524000000
+              "duration": 1225000000
             }
           },
           {
@@ -402,7 +463,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 139000000
             }
           }
         ],
@@ -437,7 +498,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 20000000
             }
           },
           {
@@ -450,7 +511,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 747000000
+              "duration": 2821000000
             }
           },
           {
@@ -463,7 +524,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 294000000
+              "duration": 336000000
             }
           },
           {
@@ -476,7 +537,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 148000000
             }
           }
         ],
