@@ -11,7 +11,36 @@ export default class LoginPage {
     cy.get("#password").type(password, { force: true });
   }
 
-  static submitLogin() {
+  static submitLoginSuccessfully() {
     cy.get("#login-button").click();
+  }
+  static submitLoginWithEmptyInputs() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
+  }
+
+  static submitLoginWithEmptyPassword() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
+  }
+
+  static submitLoginWithEmptyUsername() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
+  }
+
+  static submitLoginWithInvalidCredentials() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
+  }
+
+  static submitLoginWithInvalidPassword() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
+  }
+
+  static submitLoginWithInvalidUsername() {
+    cy.get("#login-button").click();
+    cy.get('h3[data-test="error"]').should("be.visible");
   }
 }
