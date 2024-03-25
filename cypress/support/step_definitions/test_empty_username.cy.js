@@ -7,5 +7,5 @@ When("The user writes nothing in the Username input", () => {
 });
 
 Then("The user should see a message about empty username", () => {
-  LoginPage.submitLoginWithEmptyUsername();
+  LoginPage.submitWithEmptyUsername();
 });

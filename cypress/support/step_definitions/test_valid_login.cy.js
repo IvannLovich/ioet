@@ -13,5 +13,5 @@ Then("The user writes the password in the Password input", () => {
 });
 
 Then("The user is successfully logged", () => {
-  LoginPage.submitLoginSuccessfully();
+  LoginPage.submitSuccessfully();
 });

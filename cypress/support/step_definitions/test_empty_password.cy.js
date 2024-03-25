@@ -7,5 +7,5 @@ When("The user enters empty password in the Password input", () => {
 });
 
 Then("The user should see a message about empty password", () => {
-  LoginPage.submitLoginWithEmptyPassword();
+  LoginPage.submitWithEmptyPassword();
 });

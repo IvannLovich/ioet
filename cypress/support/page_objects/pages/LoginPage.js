@@ -11,36 +11,41 @@ export default class LoginPage {
     cy.get("#password").type(password, { force: true });
   }
 
-  static submitLoginSuccessfully() {
+  static submitLogin() {
     cy.get("#login-button").click();
   }
-  static submitLoginWithEmptyInputs() {
-    cy.get("#login-button").click();
+
+  static submitSuccessfully() {
+    this.submitLogin();
+  }
+
+  static submitWithEmptyInputs() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 
-  static submitLoginWithEmptyPassword() {
-    cy.get("#login-button").click();
+  static submitWithEmptyPassword() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 
-  static submitLoginWithEmptyUsername() {
-    cy.get("#login-button").click();
+  static submitWithEmptyUsername() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 
-  static submitLoginWithInvalidCredentials() {
-    cy.get("#login-button").click();
+  static submitWithInvalidCredentials() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 
-  static submitLoginWithInvalidPassword() {
-    cy.get("#login-button").click();
+  static submitWithInvalidPassword() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 
-  static submitLoginWithInvalidUsername() {
-    cy.get("#login-button").click();
+  static submitWithInvalidUsername() {
+    this.submitLogin();
     cy.get('h3[data-test="error"]').should("be.visible");
   }
 }

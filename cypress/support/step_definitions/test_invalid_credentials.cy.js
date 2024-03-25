@@ -11,5 +11,5 @@ When("The user writes invalid pass {string}", (password) => {
 });
 
 Then("The user submits the login form", () => {
-  LoginPage.submitLoginWithInvalidCredentials();
+  LoginPage.submitWithInvalidCredentials();
 });

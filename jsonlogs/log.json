@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "login;user-log-in-to-the-inventory-items-page",
+        "id": "empty-credentials-login;username-and-password-inputs-empty",
         "keyword": "Scenario",
         "line": 3,
-        "name": "User log in to the inventory items page",
+        "name": "Username and password inputs empty",
         "steps": [
           {
             "arguments": [],
@@ -19,7 +19,425 @@
             },
             "result": {
               "status": "passed",
-              "duration": 933000000
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user enters empty username in the Username input",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1430000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The user writes empty password in the Password input",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The user should see a message about empty username and password",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "empty-credentials-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Empty Credentials Login",
+    "tags": [],
+    "uri": "cypress/e2e/emptyCredentials.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "invalid-password-login;valid-username,-password-invalid",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid username, password invalid",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user enters valid username \"standard_user\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The user writes invalid password \"invalid_password\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The user submits the login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "invalid-password-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Invalid Password Login",
+    "tags": [],
+    "uri": "cypress/e2e/invalidPassword.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "invalid-username-login;invalid-username,-password-correct",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Invalid username, password correct",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user enters invalid username \"invalid_user\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 704000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The user writes valid password \"secret_sauce\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The user submits form login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "invalid-username-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Invalid Username Login",
+    "tags": [],
+    "uri": "cypress/e2e/invalidUsername.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "invalid-username-and-password-login;invalid-username-and-password",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Invalid username and password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user types invalid username \"invalid_user\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 947000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The user writes invalid pass \"invalid_password\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The user submits the login form",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "invalid-username-and-password-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Invalid Username and Password Login",
+    "tags": [],
+    "uri": "cypress/e2e/invalidUsernamePasswordLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "password-empty-login;password-input-empty-only",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Password input empty only",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user enters empty password in the Password input",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The user should see a message about empty password",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "password-empty-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Password Empty Login",
+    "tags": [],
+    "uri": "cypress/e2e/passwordEmptyLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "username-empty-login;username-input-empty-only",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Username input empty only",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The user writes nothing in the Username input",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The user should see a message about empty username",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "username-empty-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Username Empty Login",
+    "tags": [],
+    "uri": "cypress/e2e/usernameEmptyLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "valid-login;user-log-in-successfully-to-the-inventory-items-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User log in successfully to the inventory items page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The user is on the Saucedemo login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
@@ -32,7 +450,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 326000000
+              "duration": 747000000
             }
           },
           {
@@ -45,7 +463,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 329000000
+              "duration": 294000000
             }
           },
           {
@@ -58,7 +476,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 181000000
+              "duration": 128000000
             }
           }
         ],
@@ -66,11 +484,11 @@
         "type": "scenario"
       }
     ],
-    "id": "login",
+    "id": "valid-login",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login",
+    "name": "Valid Login",
     "tags": [],
-    "uri": "cypress/e2e/login.feature"
+    "uri": "cypress/e2e/validLogin.feature"
   }
 ]

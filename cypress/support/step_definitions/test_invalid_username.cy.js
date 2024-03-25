@@ -11,5 +11,5 @@ When("The user writes valid password {string}", (password) => {
 });
 
 Then("The user submits form login", () => {
-  LoginPage.submitLoginWithInvalidUsername();
+  LoginPage.submitWithInvalidUsername();
 });
